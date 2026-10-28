@@ -1,10 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hello World</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TouchNet uPay Test</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello, World!</h1>
+  <main class="container">
+    <header class="page-header">
+      <h1>TouchNet uPay Test</h1>
+      <p>Select a campus below to launch its TouchNet uPay admission application payment site in a new tab.</p>
+      <div class="endpoint-badge">
+        <span class="badge-label">POST Endpoint</span>
+        <code>https://epay.hawaii.edu:8443/C24372test_upay/web/index.jsp</code>
+      </div>
+    </header>
+
+    <form action="https://epay.hawaii.edu:8443/C24372test_upay/web/index.jsp" method="post" target="_blank">
+      <div class="campus-grid">
+
+        <!-- HAW: 257 -->
+        <button type="submit" name="UPAY_SITE_ID" value="257" class="campus-btn type-cc">
+          <div class="btn-top">
+            <span class="campus-code">HAW</span>
+            <span class="type-pill">CC</span>
+            <span class="fee-amt">$25</span>
+          </div>
+          <div class="campus-desc">Hawaiʻi Community College</div>
+          <div class="site-meta">
+            <code>ADM_APP_HAW</code>
+            <span>ID: 257</span>
+          </div>
+        </button>
+
+        <!-- HIL: 258 -->
+        <button type="submit" name="UPAY_SITE_ID" value="258" class="campus-btn type-u">
+          <div class="btn-top">
+            <span class="campus-code">HIL</span>
+            <span class="type-pill">U</span>
+            <span class="fee-amt">$50</span>
+          </div>
+          <div class="campus-desc">University of Hawaiʻi at Hilo</div>
+          <div class="site-meta">
+            <code>ADM_APP_HIL</code>
+            <span>ID: 258</span>
+          </div>
+        </button>
+
+        <!-- HON: 259 -->
+        <button type="submit" name="UPAY_SITE_ID" value="259" class="campus-btn type-cc">
+          <div class="btn-top">
+            <span class="campus-code">HON</span>
+            <span class="type-pill">CC</span>
+            <span class="fee-amt">$25</span>
+          </div>
+          <div class="campus-desc">Honolulu Community College</div>
+          <div class="site-meta">
+            <code>ADM_APP_HON</code>
+            <span>ID: 259</span>
+          </div>
+        </button>
+
+        <!-- KAP: 260 -->
+        <button type="submit" name="UPAY_SITE_ID" value="260" class="campus-btn type-cc">
+          <div class="btn-top">
+            <span class="campus-code">KAP</span>
+            <span class="type-pill">CC</span>
+            <span class="fee-amt">$25</span>
+          </div>
+          <div class="campus-desc">Kapiʻolani Community College</div>
+          <div class="site-meta">
+            <code>ADM_APP_KAP</code>
+            <span>ID: 260</span>
+          </div>
+        </button>
+
+        <!-- KAU: 261 -->
+        <button type="submit" name="UPAY_SITE_ID" value="261" class="campus-btn type-cc">
+          <div class="btn-top">
+            <span class="campus-code">KAU</span>
+            <span class="type-pill">CC</span>
+            <span class="fee-amt">$25</span>
+          </div>
+          <div class="campus-desc">Kauaʻi Community College</div>
+          <div class="site-meta">
+            <code>ADM_APP_KAU</code>
+            <span>ID: 261</span>
+          </div>
+        </button>
+
+        <!-- LEE: 262 -->
+        <button type="submit" name="UPAY_SITE_ID" value="262" class="campus-btn type-cc">
+          <div class="btn-top">
+            <span class="campus-code">LEE</span>
+            <span class="type-pill">CC</span>
+            <span class="fee-amt">$25</span>
+          </div>
+          <div class="campus-desc">Leeward Community College</div>
+          <div class="site-meta">
+            <code>ADM_APP_LEE</code>
+            <span>ID: 262</span>
+          </div>
+        </button>
+
+        <!-- MAN: 263 -->
+        <button type="submit" name="UPAY_SITE_ID" value="263" class="campus-btn type-u">
+          <div class="btn-top">
+            <span class="campus-code">MAN</span>
+            <span class="type-pill">U</span>
+            <span class="fee-amt">$70</span>
+          </div>
+          <div class="campus-desc">University of Hawaiʻi at Mānoa</div>
+          <div class="site-meta">
+            <code>ADM_APP_MAN</code>
+            <span>ID: 263</span>
+          </div>
+        </button>
+
+        <!-- MAU: 264 -->
+        <button type="submit" name="UPAY_SITE_ID" value="264" class="campus-btn type-cc">
+          <div class="btn-top">
+            <span class="campus-code">MAU</span>
+            <span class="type-pill">CC</span>
+            <span class="fee-amt">$25</span>
+          </div>
+          <div class="campus-desc">University of Hawaiʻi Maui College</div>
+          <div class="site-meta">
+            <code>ADM_APP_MAU</code>
+            <span>ID: 264</span>
+          </div>
+        </button>
+
+        <!-- WIN: 265 -->
+        <button type="submit" name="UPAY_SITE_ID" value="265" class="campus-btn type-cc">
+          <div class="btn-top">
+            <span class="campus-code">WIN</span>
+            <span class="type-pill">CC</span>
+            <span class="fee-amt">$25</span>
+          </div>
+          <div class="campus-desc">Windward Community College</div>
+          <div class="site-meta">
+            <code>ADM_APP_WIN</code>
+            <span>ID: 265</span>
+          </div>
+        </button>
+
+        <!-- WOA: 266 -->
+        <button type="submit" name="UPAY_SITE_ID" value="266" class="campus-btn type-u">
+          <div class="btn-top">
+            <span class="campus-code">WOA</span>
+            <span class="type-pill">U</span>
+            <span class="fee-amt">$50</span>
+          </div>
+          <div class="campus-desc">University of Hawaiʻi – West Oʻahu</div>
+          <div class="site-meta">
+            <code>ADM_APP_WOA</code>
+            <span>ID: 266</span>
+          </div>
+        </button>
+
+      </div>
+    </form>
+  </main>
 </body>
 </html>
